@@ -6,6 +6,20 @@ TagManager:
   tags:
   - Animal
   - Element
+  - Hotbar
+  - Slots
+  - Slot
+  - CraftSystem
+  - Canvas
+  - Item
+  - DraggingItem
+  - Panel
+  - ResultSlot
+  - ItemIcon
+  - Tooltip
+  - EventSystem
+  - EquipmentSystem
+  - MainInventory
   layers:
   - Default
   - TransparentFX
