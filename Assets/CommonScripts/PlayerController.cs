@@ -8,8 +8,13 @@ public class PlayerController : Character {
     public Camera cam;
     public ParticleSystem attackEffect;
     private CharacterController player;
-    
-	protected override void Awake()
+    public float maxMana;
+    public float maxDamage;
+    public float maxArmor;
+    public float mana;
+    public float armor;
+
+    protected override void Awake()
     {
         base.Awake();
         player = GetComponent<CharacterController>();
