@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Animal
   - Element
+  - Pickup
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Floor
+  - Pickup
   - 
   - 
   - 

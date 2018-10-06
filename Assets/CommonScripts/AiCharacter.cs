@@ -24,7 +24,13 @@ public class AiCharacter : Character
 
     protected override void FixedUpdate()
     {
-        if (!isActive) return;
+        if (!isActive)
+        {
+            Vector3 posotion = transform.position;
+            transform.position -= new Vector3(0, (float)(0.3 * Time.deltaTime),0);
+            if (transform.position.y <= -5) Destroy(this.gameObject);
+            return;
+        }
         base.FixedUpdate();
         AI();
     }
@@ -114,4 +120,6 @@ public class AiCharacter : Character
             nav.ResetPath();
         }
     }
+
+
 }

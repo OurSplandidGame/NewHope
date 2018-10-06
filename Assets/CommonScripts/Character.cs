@@ -87,6 +87,7 @@ public class Character : MonoBehaviour
         isActive = true;
         attacking = false;
         UpdateTargets();
+        
     }
 	
     protected virtual void FixedUpdate()
@@ -119,6 +120,7 @@ public class Character : MonoBehaviour
 
     public virtual void TakeDamage(GameObject attacker, int type, float amount)
     {
+        if (debug) print("Damage take: " + amount);
         if (!isActive) return;
         foreach(string e in enemyTagList)
         {
@@ -196,6 +198,11 @@ public class Character : MonoBehaviour
         float distance = (position - transform.position).magnitude;
         float angle = Vector3.Angle(position - transform.position, transform.forward);
         return distance <= attackRange && angle <= attackAngle / 2f;
+    }
+
+    public List<GameObject> GetEnemies()
+    {
+        return targets;
     }
 
     protected virtual void AnimMove(float speed)
