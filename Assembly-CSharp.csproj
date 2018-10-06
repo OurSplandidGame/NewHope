@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{775F91A8-BB61-371F-AB73-1D038359EA4D}</ProjectGuid>
+    <ProjectGuid>{244A4995-1714-C420-26C1-038E60A8C415}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,7 @@
      <Compile Include="Assets\CommonScripts\LasserTower.cs" />
      <Compile Include="Assets\CommonScripts\MainCam.cs" />
      <Compile Include="Assets\CommonScripts\PlayerController.cs" />
+     <Compile Include="Assets\CommonScripts\Spawner.cs" />
      <Compile Include="Assets\CommonScripts\Sun.cs" />
      <Compile Include="Assets\Fork Particle Variety Pack FX\Assets\Scripts\ForkAPI\CanvasButtonController.cs" />
      <Compile Include="Assets\Fork Particle Variety Pack FX\Assets\Scripts\ForkAPI\ForkParticleEffect.cs" />
@@ -219,16 +220,16 @@
      <None Include="Assets\SitePackage\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\SitePackage\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>D:/Hopeless/Hopeless/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>E:/NewHope/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Hopeless/Hopeless/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/NewHope/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Hopeless/Hopeless/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>E:/NewHope/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Hopeless/Hopeless/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/NewHope/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

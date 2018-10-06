@@ -604,7 +604,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 80
+      value: 75.6
       objectReference: {fileID: 0}
     - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
       propertyPath: m_LocalPosition.y
@@ -612,7 +612,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 86.39
+      value: 86.81
       objectReference: {fileID: 0}
     - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
       propertyPath: m_LocalRotation.x
@@ -634,113 +634,42 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 493908, guid: 78e641475de01b141867f6816f034312, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9593908, guid: 78e641475de01b141867f6816f034312, type: 2}
-      propertyPath: m_Controller
+    - target: {fileID: 114039385880971508, guid: 78e641475de01b141867f6816f034312,
+        type: 2}
+      propertyPath: drops.Array.data[0]
       value: 
-      objectReference: {fileID: 9100000, guid: 513f935fc0c5e427794a28ba5ec095a7, type: 2}
-    - target: {fileID: 193908, guid: 78e641475de01b141867f6816f034312, type: 2}
-      propertyPath: m_TagString
-      value: Animal
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1057717353}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78e641475de01b141867f6816f034312, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &878182248 stripped
+--- !u!1 &934361708
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 193908, guid: 78e641475de01b141867f6816f034312,
-    type: 2}
-  m_PrefabInternal: {fileID: 878182247}
---- !u!136 &878182249
-CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 878182248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.6
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.6, z: 0.2}
---- !u!195 &878182250
-NavMeshAgent:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 934361709}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &934361709
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 878182248}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!54 &878182251
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 878182248}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: Infinity
-  m_AngularDrag: Infinity
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &878182254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 878182248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ece6584ae60fb3b4e940973626e7f183, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debug: 1
-  discoverRange: 10
-  discoverAngle: 360
-  attackRange: 3
-  attackAngle: 30
-  attackInterval: 1
-  damage: 10
-  maxHealth: 50
-  health: 50
-  healthRestore: 0
-  enemyTagList:
-  - Player
-  strolling: 1
-  strollInterval: 5
-  strollRange: 5
-  loseTargetRange: 15
-  loseTargetTime: 10
-  drops:
-  - {fileID: 1057717353}
+  m_GameObject: {fileID: 934361708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 74.09463, y: -9.275967, z: 82.978455}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &954504290
 Prefab:
   m_ObjectHideFlags: 0
